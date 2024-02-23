@@ -19,7 +19,7 @@ def calc_stats_one_file(file_path: str) -> Tuple[int]:
         with open(file_path, 'r', encoding='utf-8') as f:
             lines = f.readlines()
             num_lines, num_words, num_chars = calc_stats_from_lines(lines)
-            print(f"{num_lines:5} {num_words:5} {num_chars:5} {file_name}")
+            print(f"{num_lines:5} {num_words:7} {num_chars:7} {file_name}")
             return num_lines, num_words, num_chars
     else:
         assert False, f"File {file_name} doesn't exist"
@@ -32,12 +32,12 @@ def calc_stats_multiple_files(file_paths: List[str]):
         total_lines += num_lines
         total_words += num_words
         total_chars += num_chars
-    print(f"{total_lines:5} {total_words:5} {total_chars:5} total")
+    print(f"{total_lines:5} {total_words:7} {total_chars:7} total")
 
 
 def calc_stats_stding(lines: List[str]):
     num_lines, num_words, num_chars = calc_stats_from_lines(lines)
-    print(f"{num_lines:5} {num_words:5} {num_chars:5} stdin")
+    print(f"{num_lines:5} {num_words:7} {num_chars:7} stdin")
 
 
 if __name__ == "__main__":
