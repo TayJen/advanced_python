@@ -3,3 +3,9 @@ videos/
 
 venv/
 
+*/__pycache__
+*/.pypirc
+*/dist
+*/.pdm-build
+*/LICENSE
+*/pyproject.toml
