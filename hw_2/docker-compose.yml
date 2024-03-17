@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  pdflatex:
+    image: "pdflatex-tayjen"
+    container_name: "pdflatex-tayjen"
+    build: .
+    working_dir: $PWD
+    environment:
+      - "$PWD:$PWD"
+    # command: "ls"
+    command: "pdflatex ${PWD}/main.tex"

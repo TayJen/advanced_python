@@ -1,5 +1,5 @@
 from latex_tayjen import make_latex_table, create_base_latex_and_insert_image
-# уже пакет
+
 
 if __name__ == '__main__':
     table = [
@@ -9,13 +9,13 @@ if __name__ == '__main__':
         ["Evgeny", 3500, "Yandex"]
     ]
 
-    img_path = './images/superJumbo.jpg'
+    img_path = 'D:/main/university/itmo/courses/advanced_python/hw_2/images/superJumbo.jpg'
+    tex_path = './artifacts/2_2.tex'
 
-    with open('./artifacts/2_2.tex', 'w', encoding='utf-8') as f_tex:
+    with open(tex_path, 'w', encoding='utf-8') as f_tex:
         for latex_img_row in create_base_latex_and_insert_image(img_path):
             f_tex.write(latex_img_row)
             if img_path in latex_img_row:
                 f_tex.write('\n')
                 for row in make_latex_table(table, need_base=False):
                     f_tex.write(row)
-

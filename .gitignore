@@ -4,7 +4,8 @@ videos/
 venv/
 
 */__pycache__
-*/.pypirc
+*.pyc
+
 */dist
 */.pdm-build
 */LICENSE
