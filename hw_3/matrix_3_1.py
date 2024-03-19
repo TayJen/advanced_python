@@ -17,6 +17,17 @@ class CustomMatrix:
 
         return CustomMatrix(result)
 
+    def __sub__(self, other_matrix):
+        if self.shape != other_matrix.shape:
+            raise ValueError("matrix must have the same shape")
+
+        result = [
+            [self.matrix[i][j] - other_matrix.matrix[i][j] for j in range(self.shape[1])] 
+            for i in range(self.shape[0])
+        ]
+
+        return CustomMatrix(result)
+
     def __mul__(self, other_matrix):
         if self.shape != other_matrix.shape:
             raise ValueError("matrix must have the same shape")
@@ -43,6 +54,17 @@ class CustomMatrix:
             for j in range(other_matrix.shape[1]):
                 for k in range(self.shape[1]):
                     result[i][j] += self.matrix[i][k] * other_matrix.matrix[k][j]
+
+        return CustomMatrix(result)
+
+    def __truediv__(self, other_matrix):
+        if self.shape != other_matrix.shape:
+            raise ValueError("matrix must have the same shape")
+
+        result = [
+            [self.matrix[i][j] / other_matrix.matrix[i][j] for j in range(self.shape[1])] 
+            for i in range(self.shape[0])
+        ]
 
         return CustomMatrix(result)
 
