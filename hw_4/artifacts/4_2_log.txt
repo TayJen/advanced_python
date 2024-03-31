@@ -1,0 +1,48 @@
+ThreadPoolExecutor with 1 jobs is started at 2094.8506071567535
+ThreadPoolExecutor with 1 jobs is finished! Answer: 1.000, time working: 8.649519920349121
+
+ThreadPoolExecutor with 2 jobs is started at 2103.5087130069733
+ThreadPoolExecutor with 2 jobs is finished! Answer: 1.000, time working: 8.500421524047852
+
+ThreadPoolExecutor with 3 jobs is started at 2112.0181353092194
+ThreadPoolExecutor with 3 jobs is finished! Answer: 1.000, time working: 8.40540361404419
+
+ThreadPoolExecutor with 4 jobs is started at 2120.434539794922
+ThreadPoolExecutor with 4 jobs is finished! Answer: 1.000, time working: 8.493021488189697
+
+ThreadPoolExecutor with 5 jobs is started at 2128.9385600090027
+ThreadPoolExecutor with 5 jobs is finished! Answer: 1.000, time working: 8.499364852905273
+
+ThreadPoolExecutor with 6 jobs is started at 2137.4479269981384
+ThreadPoolExecutor with 6 jobs is finished! Answer: 1.000, time working: 8.473417282104492
+
+ThreadPoolExecutor with 7 jobs is started at 2145.9303770065308
+ThreadPoolExecutor with 7 jobs is finished! Answer: 1.000, time working: 8.62699818611145
+
+ThreadPoolExecutor with 8 jobs is started at 2154.5680010318756
+ThreadPoolExecutor with 8 jobs is finished! Answer: 1.000, time working: 8.579286813735962
+
+ProcessPoolExecutor with 1 jobs is started at 2163.1628642082214
+ProcessPoolExecutor with 1 jobs is finished! Answer: 1.000, time working: 8.640793085098267
+
+ProcessPoolExecutor with 2 jobs is started at 2171.8156595230103
+ProcessPoolExecutor with 2 jobs is finished! Answer: 1.000, time working: 5.105800151824951
+
+ProcessPoolExecutor with 3 jobs is started at 2176.9334614276886
+ProcessPoolExecutor with 3 jobs is finished! Answer: 1.000, time working: 3.954220771789551
+
+ProcessPoolExecutor with 4 jobs is started at 2180.904217004776
+ProcessPoolExecutor with 4 jobs is finished! Answer: 1.000, time working: 3.5857808589935303
+
+ProcessPoolExecutor with 5 jobs is started at 2184.5049970149994
+ProcessPoolExecutor with 5 jobs is finished! Answer: 1.000, time working: 3.228037118911743
+
+ProcessPoolExecutor with 6 jobs is started at 2187.7460346221924
+ProcessPoolExecutor with 6 jobs is finished! Answer: 1.000, time working: 3.3220407962799072
+
+ProcessPoolExecutor with 7 jobs is started at 2191.0850834846497
+ProcessPoolExecutor with 7 jobs is finished! Answer: 1.000, time working: 3.2975645065307617
+
+ProcessPoolExecutor with 8 jobs is started at 2194.4106483459473
+ProcessPoolExecutor with 8 jobs is finished! Answer: 1.000, time working: 3.325864791870117
+

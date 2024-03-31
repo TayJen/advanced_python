@@ -1,0 +1,18 @@
+ThreadPoolExecutor with 1 n_jobs time: 8.650
+ThreadPoolExecutor with 2 n_jobs time: 8.500
+ThreadPoolExecutor with 3 n_jobs time: 8.405
+ThreadPoolExecutor with 4 n_jobs time: 8.493
+ThreadPoolExecutor with 5 n_jobs time: 8.499
+ThreadPoolExecutor with 6 n_jobs time: 8.473
+ThreadPoolExecutor with 7 n_jobs time: 8.627
+ThreadPoolExecutor with 8 n_jobs time: 8.579
+
+
+ProcessPoolExecutor with 1 n_jobs time: 8.641
+ProcessPoolExecutor with 2 n_jobs time: 5.106
+ProcessPoolExecutor with 3 n_jobs time: 3.954
+ProcessPoolExecutor with 4 n_jobs time: 3.586
+ProcessPoolExecutor with 5 n_jobs time: 3.228
+ProcessPoolExecutor with 6 n_jobs time: 3.322
+ProcessPoolExecutor with 7 n_jobs time: 3.298
+ProcessPoolExecutor with 8 n_jobs time: 3.326

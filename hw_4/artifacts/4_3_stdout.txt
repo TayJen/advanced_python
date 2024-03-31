@@ -1,0 +1,8 @@
+Got stdin message: hello at 710.3042631149292
+Got stdin message: how are you at 710.3049829006195
+Got stdin message: I am okay by the way! at 710.3049829006195
+Got stdin message: oh yeah, I get it now at 710.3049829006195
+Got result message: ['uryyb'] at 710.3998219966888
+Got result message: ['ubj ner lbh'] at 715.3969874382019
+Got result message: ['v nz bxnl ol gur jnl!'] at 720.3963046073914
+Got result message: ['bu lrnu, v trg vg abj'] at 725.3943331241608

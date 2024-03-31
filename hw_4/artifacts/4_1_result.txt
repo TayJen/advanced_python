@@ -1,0 +1,3 @@
+Synchronous time: 53.885
+Multithreading time: 52.621
+Multiprocessing time: 19.274
