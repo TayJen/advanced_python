@@ -1,8 +1,46 @@
-Got stdin message: hello at 710.3042631149292
-Got stdin message: how are you at 710.3049829006195
-Got stdin message: I am okay by the way! at 710.3049829006195
-Got stdin message: oh yeah, I get it now at 710.3049829006195
-Got result message: ['uryyb'] at 710.3998219966888
-Got result message: ['ubj ner lbh'] at 715.3969874382019
-Got result message: ['v nz bxnl ol gur jnl!'] at 720.3963046073914
-Got result message: ['bu lrnu, v trg vg abj'] at 725.3943331241608
+Got stdin message: hello at 253.5748598575592
+Got result message: uryyb at 253.5768599510193
+Got stdin message: how are you? at 255.65491557121277
+Got result message: ubj ner lbh? at 258.5759029388428
+Got stdin message: I am very good man> really at 260.76798367500305
+Got result message: v nz irel tbbq zna> ernyyl at 263.57662320137024
+Got stdin message: And what do you think about that? at 269.4148066043854
+Got result message: naq jung qb lbh guvax nobhg gung? at 269.4154489040375
+Got stdin message: I really like it at 275.10198068618774
+Got result message: v ernyyl yvxr vg at 275.10298013687134
+Got stdin message: I literally have no words at 281.29151368141174
+Got result message: v yvgrenyyl unir ab jbeqf at 281.29151368141174
+Got stdin message: wow at 320.7590003013611
+Got result message: jbj at 320.7596278190613
+Got stdin message: how is that at 322.6288900375366
+Got stdin message: I don't believe at 325.3860836029053
+Got result message: ubj vf gung at 325.75971388816833
+Got stdin message: It is not possible at 329.0908100605011
+Got result message: v qba'g oryvrir at 330.7607398033142
+Got result message: vg vf abg cbffvoyr at 335.7614748477936
+Got stdin message: A at 340.40984582901
+Got result message: n at 340.76137495040894
+Got stdin message: r at 340.8293709754944
+Got stdin message: e at 341.22181248664856
+Got stdin message: y at 341.7353312969208
+Got stdin message: o at 342.4067723751068
+Got stdin message: u at 343.0597188472748
+Got stdin message: k at 343.9750883579254
+Got stdin message: i at 344.5283739566803
+Got stdin message: d at 345.0960557460785
+Got stdin message: d at 345.5198721885681
+Got result message: e at 345.7622494697571
+Got stdin message: i at 346.7367854118347
+Got stdin message: n at 347.1197819709778
+Got stdin message: g at 347.62378883361816
+Got result message: r at 350.76256680488586
+Got result message: l at 355.7630262374878
+Got result message: b at 360.76415848731995
+Got result message: h at 365.76489424705505
+Got result message: x at 370.76520466804504
+Got result message: v at 375.76614260673523
+Got result message: q at 380.7671263217926
+Got result message: q at 385.76757073402405
+Got result message: v at 390.76775884628296
+Got result message: a at 395.76835894584656
+Got result message: t at 400.7695081233978

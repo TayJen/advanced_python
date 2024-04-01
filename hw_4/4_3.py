@@ -5,21 +5,17 @@ import queue
 
 
 class MainProcess():
-    def __init__(self, filename_stdin, filename_stdout):
+    def __init__(self, filename_stdout):
         self.queue_to_a = mp.Queue()
         self.queue_to_b = mp.Queue()
-        self.filename_stdin = filename_stdin
         self.filename_stdout = filename_stdout
     
-    def send(self, lock):
-        with open(self.filename_stdin, 'r') as f_stdin:
-            lines = f_stdin.readlines()
-            for line in lines:
-                msg = line.strip('\n')
-                self.queue_to_a.put(msg)
-                with lock:
-                    with open(self.filename_stdout, 'a') as f_stdout:
-                        f_stdout.write(f"Got stdin message: {msg} at {time.time() % 1000}\n")
+    def send(self, line, lock):
+        msg = line.strip()
+        self.queue_to_a.put(msg)
+        with lock:
+            with open(self.filename_stdout, 'a') as f_stdout:
+                f_stdout.write(f"Got stdin message: {msg} at {time.time() % 1000}\n")
     
     def recv(self, lock):
         while True:
@@ -27,10 +23,11 @@ class MainProcess():
                 res = self.queue_to_b.get()
                 with lock:
                     with open(self.filename_stdout, 'a') as f_stdout:
-                        f_stdout.write(f"Got result message: {res} at {time.time() % 1000}\n")
-                    print(res)
+                        f_stdout.write(f"Got result message: {res[0]} at {time.time() % 1000}\n")
+                    # print(res)
             except queue.Empty:
-                print("Main Process ain't got nothing yet")
+                pass
+                # print("Main Process ain't got nothing yet")
 
 
 class ProcessA():
@@ -48,7 +45,8 @@ class ProcessA():
                 msg = self.main.queue_to_a.get()
                 self.send(msg)
             except queue.Empty:
-                print("A_Process ain't got nothing yet")
+                # print("A_Process ain't got nothing yet")
+                pass
 
 
 class ProcessB():
@@ -62,19 +60,18 @@ class ProcessB():
     def recv(self):
         while True:
             msg = self.pipe.recv()
-            print(f"B_Process got message {msg}")
+            # print(f"B_Process got message {msg}")
             if msg:
                 self.send(codecs.encode(msg, 'rot_13'))
 
 
 if __name__ == '__main__':
-    filename_stdin = "./artifacts/4_3_stdin.txt"
-    filename_stdout = "./artifacts/4_3_stdout.txt"
+    filename_stdout = "./artifacts/4_3_stdo.txt"
     
     a, b = mp.Pipe(duplex=False)
     lock = mp.Lock()
     
-    main = MainProcess(filename_stdin, filename_stdout)
+    main = MainProcess(filename_stdout)
     A = ProcessA(main, b)
     B = ProcessB(main, a)
     
@@ -85,4 +82,5 @@ if __name__ == '__main__':
     for x in x1, x2, x3:
         x.start()
     
-    main.send(lock)
+    while True:
+        main.send(input(), lock)
