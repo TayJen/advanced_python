@@ -66,7 +66,7 @@ class ProcessB():
 
 
 if __name__ == '__main__':
-    filename_stdout = "./artifacts/4_3_stdo.txt"
+    filename_stdout = "./artifacts/4_3_stdout.txt"
     
     a, b = mp.Pipe(duplex=False)
     lock = mp.Lock()
